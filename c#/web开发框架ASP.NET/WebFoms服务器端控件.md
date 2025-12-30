@@ -11,6 +11,8 @@
 |---|---|---|
 |`ContentPlaceHolderID`|填充到母版页的位置的ID|`ContentPlaceHolderID="MainContent"`|
 
+## **
+
 
 ## **自定义注册控件**
 Web Forms 里 **注册“用户控件（.ascx 文件）”** 的指令`<%@ Register>` ——`.ascx`是 Web Forms 的 “复用组件”（比如多个页面都要显示 “审批日志”，不用重复写代码，做一个`ApplicationLog.ascx`，哪里需要就调哪里），Register就是告诉当前.aspx 页面：“我要用这些自定义控件，你先认识它们”

@@ -23,6 +23,8 @@ Web Forms 里 **注册“用户控件（.ascx 文件）”** 的指令 ——`.a
 |`Src`|告诉页面 “这个自定义控件的文件存在哪”（控件的物理路径）|`Src="~/ProcessCenter/Controls/RequestBasicInfo.ascx"`|
 |`TagPrefix`|给这组控件起个 “家族前缀”（自定义，比如 uc1、myCtrl 都可以），避免不同控件重名|`TagPrefix="uc1"	`|
 |`TagName`|给这个控件起个 “专属名字”（和控件功能对应，方便识别）|`TagName="RequestBasicInfo"	`|
+|`Assembly`|包含控件类的程序集名称（通常是 DLL 名，不带 .dll 后缀）。||
+|`Namespace`|控件类所在的命名空间||
 
 **后面能写 <uc1:ProcessTitle ... />**
 这就是调用刚才注册的控件！`<uc1:ProcessTitle runat="server" ID="ProcessTitle" />` 拆解：

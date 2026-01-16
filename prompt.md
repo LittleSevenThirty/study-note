@@ -2,6 +2,26 @@
 ## 知识总结板块
 等级划分
 详细（整体框架）-》细致（对某一点）
+后续繁杂的知识
+需要探索理清关键关系（尤其是技术关系链）
+比如说
+```txt
+customElements (全局对象)
+│
+└── CustomElementRegistry (接口)
+    │
+    └── define() 方法：注册自定义元素（有个重载是define(name,自定义元素类)
+    └── get() 方法：获取已注册的自定义元素构造器
+    └── upgrade() 方法：升级元素
+
+自定义元素实现：
+│
+└── class MyElement extends HTMLElement (DOM API)
+    │
+    └── HTMLElement (DOM API)
+        │
+        └── Element (DOM API，DOM基础接口)
+```
 
 ## 这些文章我感觉很有意义
 https://zhuanlan.zhihu.com/p/8902147456

@@ -1,0 +1,9 @@
+# **如何使用CustomeRegister接口注册自定义元素标签**
+想要搞懂怎么注册自定义元素标签这一块，你得先需要一个继承并扩展了HTMLElement接口的类，
+然后任何实现了CustomeRegister接口的都会包含有get,define,getName,upgrade,whenDefined方法，这里主要关注get和define，其它自行去MDN
+面向开发者的 Web 技术 > Web API > CustomElementRegistry
+了解
+其中get会从已注册自定义组件里搜索是否含有对应元素，若有返回对应构造函数，否则返回undefined，使用它可以确定该元素是否已注册
+然后使用define可以定义对应元素，其它详细请看对应文章相关键词搜索
+
+后续会建立对应文章链接

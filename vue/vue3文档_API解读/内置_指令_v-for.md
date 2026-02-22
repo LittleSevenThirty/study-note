@@ -2,6 +2,20 @@
 
 > **目标**：看完这篇笔记，你能真正理解 `v-for` 的工作原理、关键细节和常见陷阱，不再“用对了但不知道为什么”。
 
+在 Vue 中，当使用 `v-for` 遍历一个对象时，参数的顺序是 `(value, key, index)`：
+
+- `value`：对象的每个属性值。
+- `key`：对象的每个属性名（键）。
+- `index`：属性的索引（可选）。
+
+在你的代码中：
+
+```vue
+<template v-for="(item, year) in items"></template>
+```
+
+- `item` 对应的是对象的 **值**（即每个年份对应的数组）。
+- `year` 对应的是对象的 **键**（即年份字符串）。
 ---
 
 ## 📌 一、`v-for` 是做什么的？（对应文档开头）
@@ -274,3 +288,5 @@ const userInfo = {
 > “我不仅会用 `v-for`，还知道它为什么这样设计，以及如何避免踩坑！”
 
 建议将此笔记与 [官方文档 v-for 小节](https://cn.vuejs.org/api/built-in-directives.html#v-for) 对照阅读，加深理解。
+
+
